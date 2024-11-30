@@ -1,66 +1,67 @@
-// app/resume/page.tsx
-
 import React from 'react';
 
-const Resume = () => {
+const Portfolio = () => {
   return (
-    <div style={{ fontFamily: 'Arial, sans-serif', padding: '20px' }}>
-      <header style={{ textAlign: 'center', marginBottom: '30px' }}>
-        <h1>ประวัติย่อ</h1>
-        <p>ข้อมูลเกี่ยวกับฉัน</p>
+    <div className="font-sans p-8 bg-gray-50 text-gray-900 min-h-screen">
+      {/* Header Section */}
+      <header className="text-center mb-10">
+        <h1 className="text-4xl font-bold mb-2">My Portfolio</h1>
       </header>
-      
-      <section style={{ marginBottom: '20px' }}>
-        <h2>ข้อมูลส่วนตัว</h2>
-        <ul>
-          <li><strong>ชื่อ:</strong> ชื่อ นามสกุล</li>
-          <li><strong>อายุ:</strong> 30 ปี</li>
-          <li><strong>อีเมล:</strong> example@example.com</li>
-          <li><strong>เบอร์โทร:</strong> 012-345-6789</li>
-        </ul>
+
+      {/* About Section */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+        <p className="text-gray-700 leading-relaxed">
+          I am a passionate web developer with a strong background in software engineering. I enjoy creating efficient
+          and beautiful web applications to solve real-world problems.
+        </p>
       </section>
 
-      <section style={{ marginBottom: '20px' }}>
-        <h2>การศึกษา</h2>
-        <ul>
-          <li><strong>ปริญญาตรี:</strong> คณะวิศวกรรมศาสตร์ มหาวิทยาลัย ABC (2555-2559)</li>
-          <li><strong>ปริญญาโท:</strong> คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัย XYZ (2560-2562)</li>
-        </ul>
+      {/* Skills Section */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <span className="bg-gray-100 px-4 py-2 rounded-lg text-center shadow-sm">HTML</span>
+          <span className="bg-gray-100 px-4 py-2 rounded-lg text-center shadow-sm">CSS</span>
+          <span className="bg-gray-100 px-4 py-2 rounded-lg text-center shadow-sm">JavaScript</span>
+          <span className="bg-gray-100 px-4 py-2 rounded-lg text-center shadow-sm">React</span>
+          <span className="bg-gray-100 px-4 py-2 rounded-lg text-center shadow-sm">Next.js</span>
+          <span className="bg-gray-100 px-4 py-2 rounded-lg text-center shadow-sm">Python</span>
+        </div>
       </section>
 
-      <section style={{ marginBottom: '20px' }}>
-        <h2>ประสบการณ์การทำงาน</h2>
-        <ul>
-          <li>
-            <strong>บริษัท A</strong> (2562-2565) - นักพัฒนาเว็บ
-            <p>พัฒนาและดูแลระบบเว็บไซต์หลักของบริษัท</p>
-          </li>
-          <li>
-            <strong>บริษัท B</strong> (2565-ปัจจุบัน) - วิศวกรซอฟต์แวร์
-            <p>พัฒนาแอปพลิเคชันมือถือและระบบหลังบ้าน</p>
-          </li>
-        </ul>
+      {/* Projects Section */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-4">Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-bold mb-2">Project 1: CRM System</h3>
+            <p className="text-gray-700">
+              A web-based customer relationship management system designed to streamline business operations.
+            </p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-bold mb-2">Project 2: Fitness Tracker App</h3>
+            <p className="text-gray-700">
+              A mobile application to track workouts and monitor fitness progress over time.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section style={{ marginBottom: '20px' }}>
-        <h2>ทักษะ</h2>
-        <ul>
-          <li>การพัฒนาเว็บไซต์ (HTML, CSS, JavaScript, React, Next.js)</li>
-          <li>การเขียนโปรแกรม (Python, Java, C++)</li>
-          <li>ฐานข้อมูล (MySQL, PostgreSQL, MongoDB)</li>
-          <li>เครื่องมือ DevOps (Docker, Kubernetes)</li>
-        </ul>
-      </section>
-
-      <section style={{ marginBottom: '20px' }}>
-        <h2>โครงการที่ทำ</h2>
-        <ul>
-          <li><strong>โปรเจกต์ 1:</strong> ระบบจัดการข้อมูลลูกค้าออนไลน์</li>
-          <li><strong>โปรเจกต์ 2:</strong> แอปพลิเคชันติดตามการออกกำลังกาย</li>
+      {/* Contact Section */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Contact</h2>
+        <p className="text-gray-700">
+          Feel free to reach out for collaborations or any inquiries.
+        </p>
+        <ul className="list-none mt-4">
+          <li><strong>Email:</strong> 66026145@up.ac.th</li>
+          <li><strong>Phone:</strong> 012-345-6789</li>
         </ul>
       </section>
     </div>
   );
 };
 
-export default Resume;
+export default Portfolio;
