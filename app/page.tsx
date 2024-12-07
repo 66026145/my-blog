@@ -41,32 +41,31 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-semibold mb-4 text-indigo-700">
-          Projects
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <h3 className="text-xl font-bold mb-2 text-indigo-600">
-              Project 1: เว็ปไซต์ดูดวง
-            </h3>
-            <p className="text-gray-700">
-              เว็ปไซต์ดูดวงที่จะมีหมวดหมู่การดูดวงตามที่ User สนใจ เช่น
-              ดูดวงประจำวัน ดูดวงเรื่องความรัก ฯลฯ
-            </p>
+      
+        {/* Projects Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-semibold mb-4 text-blue-800">โปรเจค</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-cyan-300 transform hover:scale-105">
+              <h3 className="text-2xl font-bold mb-3 text-blue-600">
+                เว็ปไซต์ดูดวง
+              </h3>
+              <p className="text-gray-700">
+                เว็ปไซต์ดูดวงที่มีหมวดหมู่การดูดวง เช่น ดูดวงประจำวัน
+                ดูดวงเรื่องความรัก ฯลฯ
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-cyan-300 transform hover:scale-105">
+              <h3 className="text-2xl font-bold mb-3 text-blue-600">
+                Maintenance UP
+              </h3>
+              <p className="text-gray-700">
+                เว็ปไซต์ที่ User สามารถรายงานของที่เสียหายหรือชำรุดได้
+                โดยฝ่ายโสตจะเป็นผู้รับผิดชอบ
+              </p>
+            </div>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <h3 className="text-xl font-bold mb-2 text-indigo-600">
-              Project 2: Maintenance UP
-            </h3>
-            <p className="text-gray-700">
-              เว็ปไซต์ที่ User สามารถรายงานของที่เสียหายหรือชำรุดได้
-              โดยฝ่ายโสตจะเป็นผู้รับผิดชอบ
-            </p>
-          </div>
-        </div>
-      </section>
+        </section>
 
       {/* Contact Section */}
       <section>
