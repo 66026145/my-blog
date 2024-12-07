@@ -2,7 +2,7 @@ import React from 'react';
 
 const Portfolio = () => {
   return (
-    <div className="font-sans p-8 bg-gray-50 text-gray-900 min-h-screen">
+    <div className="font-sans p-8 bg-gradient-to-r from-indigo-500 ... text-gray-900 min-h-screen">
       {/* Header Section */}
       <header className="text-center mb-10">
         <h1 className="text-4xl font-bold mb-2">My Portfolio</h1>
@@ -10,10 +10,9 @@ const Portfolio = () => {
 
       {/* About Section */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+        <h2 className="text-2xl font-semibold mb-4">เกี่ยวกับฉัน</h2>
         <p className="text-gray-700 leading-relaxed">
-          I am a passionate web developer with a strong background in software engineering. I enjoy creating efficient
-          and beautiful web applications to solve real-world problems.
+          ดิฉันนางสาว ณัฐปภัสร์ สมบูรณ์ นักศึกษาวิชา วิศวกรซอฟต์แวร์ มหาวิทยาลัยพะเยา ชั้นปีที่2 
         </p>
       </section>
 
@@ -35,15 +34,15 @@ const Portfolio = () => {
         <h2 className="text-2xl font-semibold mb-4">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-bold mb-2">Project 1: CRM System</h3>
+            <h3 className="text-xl font-bold mb-2">Project 1:เว็ปไซต์ดูดวง</h3>
             <p className="text-gray-700">
-              A web-based customer relationship management system designed to streamline business operations.
+             เว็ปไซต์ดูดวงที่จะมีหมวดหมู่การดูดวงตามที่ User สนใจ เช่น ดูดวงประจำวันดูดวงเรื่องความรักเป็นต้น
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-bold mb-2">Project 2: Fitness Tracker App</h3>
+            <h3 className="text-xl font-bold mb-2">Project 2: Maintenance UP</h3>
             <p className="text-gray-700">
-              A mobile application to track workouts and monitor fitness progress over time.
+              เว็ปไซต์ที่๊ User  สามารถรายงานของที่เสียหายหรือชำรุดได้ โดยมีขอบเขตคือของที่รายงานฝ่ายโสตจะเป็นผู้รับผิดชอบ
             </p>
           </div>
         </div>
@@ -51,9 +50,9 @@ const Portfolio = () => {
 
       {/* Contact Section */}
       <section>
-        <h2 className="text-2xl font-semibold mb-4">Contact</h2>
+        <h2 className="text-2xl font-semibold mb-4">ข้อมูลติดต่อ</h2>
         <p className="text-gray-700">
-          Feel free to reach out for collaborations or any inquiries.
+          หากติดต่อมาจะตอบกลับให้เร็วที่สุด ขอบคุณค่ะ
         </p>
         <ul className="list-none mt-4">
           <li><strong>Email:</strong> 66026145@up.ac.th</li>
